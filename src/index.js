@@ -1,3 +1,2 @@
-import "./styles.css";
-import "./styles.scss";
-console.log("hello world!");
+import "./style.sass"
+import '../src/fonts/OpenSans/stylesheet.css'
