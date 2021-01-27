@@ -1,0 +1,27 @@
+.header-menu
+  display: flex
+  +list-preset
+
+.header-menu__item
+  margin-right: auto
+
+  &:nth-last-of-type(1)
+    margin-right: 0
+
+.header-menu__item-link
+  align-items: center
+  display: flex
+  color: $black
+  font-weight: 700
+  font-size: 13px
+  line-height: 18px
+  padding: 21px 5px 22px
+  transition: $default-transition
+  width: 100%
+
+  svg
+    margin-left: 5px
+
+  &:hover
+    color: $grey
+

@@ -1,0 +1,188 @@
+.header
+  box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16)
+  max-width: 1440px
+  margin: 0 auto
+
+.header__top
+  background: $yellow
+
+.header__top-container
+  align-items: center
+  display: flex
+  min-height: 32px
+
+.header__top-location
+  color: $black
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  margin-right: 25px
+
+  svg
+    margin-left: 3px
+
+.header__top-phone
+  color: $black
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  margin-right: 20px
+
+.header__top-working-hours
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  margin-right: auto
+
+.header__top-link
+  color: $black
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  margin-left: 36px
+
+.header__top-networks
+  display: flex
+  margin-left: 36px
+
+.header__top-networks-item
+  align-items: center
+  display: flex
+  height: 20px
+  justify-content: center
+  margin-left: 19px
+  width: 20px
+
+.header__main
+  border-bottom: 1px solid rgba(189, 189, 189, 0.35)
+  padding: 16px 0 20px
+
+.header__main-wrapper
+  align-items: center
+  display: flex
+  justify-content: space-between
+
+.header__logo
+  align-items: center
+  display: flex
+
+  img
+    display: block
+
+.header__logo-text
+  color: $black
+  font-style: italic
+  font-weight: 400
+  font-size: 13px
+  line-height: 18px
+  margin-left: 16px
+  width: 133px
+
+.header__photo
+  align-items: center
+  background: $white
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16)
+  border-radius: 8px
+  display: flex
+  justify-content: center
+  padding: 5px 12px
+
+.header__search
+  align-items: center
+  background: #FFFFFF
+  border: 1px solid #BDBDBD
+  border-radius: 4px
+  display: flex
+  height: 44px
+  justify-content: space-between
+  width: 521px
+
+.header__search-button
+  background: transparent
+  border: 2px solid $red
+  border-radius: 4px
+  color: $red
+  cursor: pointer
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  margin-right: 3px
+  padding: 7px 17px 7px 16px
+  transition: $default-transition
+
+  &:hover
+    background: $red
+    color: $white
+
+.header__search-input
+  border: none
+  color: $grey
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  height: 100%
+  padding: 13px 16px
+  outline: none
+  width: 100%
+
+  ::placeholder
+    color: $grey
+    font-weight: 600
+    font-size: 13px
+    line-height: 18px
+
+.header__button-lk
+  align-items: center
+  color: #222222
+  display: flex
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  transition: $default-transition
+
+  svg
+    margin-right: 8px
+
+  &:hover
+    color: $red
+
+    svg
+
+      path:nth-of-type(1)
+        animation-name: move
+        animation-duration: 0.3s
+        animation-iteration-count: infinite
+
+.header__button-basket
+  align-items: center
+  background: $red
+  border: 2px solid $red
+  border-radius: 4px
+  color: $white
+  display: flex
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  padding: 5px 16px
+  transition: $default-transition
+
+  svg
+    margin-right: 8px
+
+  path
+    transition: $default-transition
+
+  &:hover
+    background: transparent
+    color: $red
+
+    path
+      fill: $red
+
+@keyframes move
+  0%
+    transform: translateX(5px)
+  50%
+    transform: translateX(0)
+  100%
+    transform: translateX(-5px)

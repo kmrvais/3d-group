@@ -1,0 +1,33 @@
+.header-main-menu
+  display: flex
+  justify-content: space-between
+  +list-preset
+  margin-top: 13px
+
+.header-main-menu__item
+  align-items: center
+  display: flex
+  justify-content: center
+
+.header-main-menu__item-link
+  color: $black
+  font-weight: 400
+  font-size: 13px
+  line-height: 18px
+  padding: 2px 5px
+  position: relative
+
+  &:before
+    background: $red
+    bottom: 0
+    content: ''
+    height: 2px
+    left: 0
+    position: absolute
+    transition: $default-transition
+    width: 0
+
+  &:hover
+
+    &:before
+      width: 100%
