@@ -1,0 +1,59 @@
+.video-slider
+  background: #F9F9F9
+  padding: 70px 0 63px
+  margin: 70px auto 105px
+  max-width: 1448px
+  width: 100%
+
+.video-slider__title
+  color: #222222
+  font-weight: 400
+  font-size: 36px
+  line-height: 43px
+
+.video-slider__top
+  display: flex
+  justify-content: space-between
+
+.video-slider__buttons
+  align-items: center
+  display: flex
+
+  .swiper-button-disabled
+    opacity: .5
+
+  .swiper-button-lock
+    display: none
+
+.video-slider__button-prev, .video-slider__button-next
+  align-items: center
+  background: transparent
+  border: 1px solid #E5E5E5
+  cursor: pointer
+  display: flex
+  height: 39px
+  justify-content: center
+  outline: none
+  padding: 0
+  transition: $default-transition
+  width: 40px
+
+  &:hover:not(.swiper-button-disabled)
+    background: #E5E5E5
+
+.video-slider__button-prev
+  border-radius: 5px 0 0 5px
+
+.video-slider__button-next
+  border-radius: 0 5px 5px 0
+  border-left-color: transparent
+
+.video-slider__container
+  margin-top: 55px
+
++mq(desktop, max)
+
+  .video-slider
+    padding: 30px 0 40px
+    margin: 40px auto 60px
+    max-width: none
