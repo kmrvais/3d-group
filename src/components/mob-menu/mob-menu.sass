@@ -1,0 +1,143 @@
+.mob-menu
+  background: $white
+  height: 100%
+  position: fixed
+  top: 0
+  left: 100%
+  padding: 150px 0 50px
+  transition: left $default-transition
+  width: 100%
+  z-index: 10
+
+.mob-menu__wrapper
+  margin: 0 auto
+  max-width: $wp1
+
+.mob-menu__container
+  padding: 0 25px 0 16px
+
+.mob-menu_open
+  left: 0
+
+.mob-menu__left
+  +list-preset
+
+.mob-menu__left-item-link
+  color: $black
+  display: inline-block
+  font-weight: normal
+  font-size: 16px
+  line-height: 20px
+  padding: 5px 0
+
+  svg
+    margin-left: 10px
+
+.mob-menu__right
+  +list-preset
+  margin-top: 20px
+
+.mob-menu__right-item-link
+  color: $black
+  display: inline-block
+  font-weight: normal
+  font-size: 16px
+  line-height: 20px
+  padding: 5px 0
+
+  svg
+    margin-left: 10px
+
+.mob-menu__location-wrapper
+  margin-bottom: 20px
+
+.mob-menu__location
+  color: $black
+  font-size: 16px
+
+  svg
+    margin-left: 5px
+
+.mob-menu__contacts
+  margin-top: 30px
+
+.mob-menu__phone
+  color: $red
+  display: inline-block
+  font-weight: normal
+  font-size: 20px
+  line-height: 24px
+
+.mob-menu__working-hours
+  margin-top: 20px
+
+.mob-menu__links
+  display: flex
+  justify-content: space-between
+  margin-top: 10px
+
+.mob-menu__link
+  border: 2px solid $red
+  border-radius: 4px
+  color: $black
+  display: inline-block
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+  padding: 2px 7px
+
+.mob-menu__networks
+  display: flex
+  margin-top: 10px
+
+.mob-menu__networks-item
+  padding: 5px
+  margin-right: 10px
+
++mq(tablet)
+
+  .mob-menu
+    padding: 100px 0
+
+  .mob-menu__wrapper
+    max-width: none
+    width: $wp2
+
+  .mob-menu__container
+    align-items: flex-start
+    bottom: auto!important
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0 20px
+
+  .mob-menu__left
+    width: 40%
+
+  .mob-menu__left-item-link
+    font-size: 18px
+    padding: 8px 0
+
+  .mob-menu__right
+    margin: 0
+    width: 40%
+
+  .mob-menu__right-item-link
+    font-size: 18px
+    padding: 8px 0
+
+  .mob-menu__location-wrapper
+    width: 100%
+
+  .mob-menu__links
+    margin-top: 15px
+
+  .mob-menu__link
+    font-size: 18px
+    margin-right: 20px
+    padding: 5px 10px
+
++mq(desktop)
+
+  .mob-menu
+    display: none

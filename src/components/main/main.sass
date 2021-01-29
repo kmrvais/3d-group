@@ -92,18 +92,88 @@
   color: #4D4D4D
   font-size: 16px
   line-height: 19px
-  position: relative
 
-  &:after
-    background: #4D4D4D
-    bottom: -3px
-    content: ''
-    height: 1px
-    position: absolute
-    left: 0
-    transition: $default-transition
-    width: 100%
+  svg
+    margin-left: 15px
+
+  span
+    position: relative
+
+    &:after
+      background: #4D4D4D
+      bottom: -3px
+      content: ''
+      height: 1px
+      position: absolute
+      left: 0
+      transition: $default-transition
+      width: 100%
 
   &:hover
-    &:after
+    span:after
       width: 0
+
+.main__bottom-link_red
+  color: $red
+
+  svg
+    path
+      stroke: $red
+
+  span:after
+    background: $red
+
++mq(desktop, max)
+
+  .main
+    margin-top: 79px
+
+  .main__left
+    margin-right: 30px
+
+  .main__left-title
+    font-size: 25px
+
+  .main__bottom
+    margin: 40px 0
+
+  .main__bottom-links
+    align-items: flex-start
+    flex-direction: column
+    margin-top: 30px
+
+  .main__bottom-link
+    margin-top: 15px
+
+    &:nth-of-type(1)
+      margin-top: 0
+
++mq(tablet, max)
+
+  .main
+    margin-top: 133px
+
+  .main__wrapper
+    flex-direction: column
+
+  .main__left
+    margin: 0
+    text-align: center
+    width: 100%
+
+  .main__left-title
+    font-size: 22px
+
+  .main__left-form-link-wrapper
+    margin-top: 20px
+
+  .main__left-text
+    font-size: 13px
+
+  .main__text
+    font-size: 14px
+    margin-top: 30px
+    width: 100%
+
+  .main__bottom-link
+    font-size: 14px

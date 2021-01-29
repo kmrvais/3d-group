@@ -12,6 +12,8 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
+    "nanoscroller": "^0.8.7",
     "swiper": "^5.3.8"
   },
   "devDependencies": {
