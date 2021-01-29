@@ -1,7 +1,5 @@
 # 3d-group
 
-Empty project.
-
 ## Building and running on localhost
 
 First install dependencies:
@@ -28,7 +26,4 @@ npm run build-prod
 node dist/bundle.js
 ```
 
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
 
